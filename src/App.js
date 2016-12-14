@@ -30,11 +30,8 @@ class App extends Component {
             selectedVideo: null
         }
         this.videoSearch('React.js')
-
-
-
     }
-
+    
     videoSearch(term){
 
         YTSearch({key: API_KEY, term: term}, (videos) =>  {
