@@ -7,19 +7,13 @@ class Header extends Component {
         return(
             <section className="Header">
                 <div className="container">
-
                     <hgroup  className="logo">
-                        <h1>My Tubes <i className="fa fa-youtube-play"></i></h1>
-
+                        <h1>My Tube <i className="fa fa-youtube-play"></i></h1>
                     </hgroup>
-
                 </div>
-
-
             </section>
         )
     }
-
 }
 
 export default Header

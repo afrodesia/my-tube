@@ -10,10 +10,17 @@ body {
 /*	margin-bottom: 40px;*/
 }
 .SearchBar{
-	margin: 40px;
+	margin: 40px 0;
 }
 .SearchBar input{
 	background: #333;
 	color:#fff;
 	border: 1px solid #333;
 }
+.VideoDetail .col-md-8{
+	padding:0 !important;
+}
+.video-title h3 a{color:#333;}
+.list-group-item{cursor: pointer}
+.list-group-item:hover{background-color: #333; color: #fff;}
+.fa-youtube-play{color: #46b8da}
