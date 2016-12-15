@@ -8,7 +8,7 @@ class Header extends Component {
             <section className="Header">
                 <div className="container">
                     <hgroup  className="logo">
-                        <h1>My Tube <i className="fa fa-youtube-play"></i></h1>
+                        <h1>MyTube <i className="fa fa-youtube-play"></i></h1>
                     </hgroup>
                 </div>
             </section>

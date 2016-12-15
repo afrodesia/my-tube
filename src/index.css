@@ -1,13 +1,29 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
-
 .Header{
 	background: #333;
 	color:#fff;
 /*	margin-bottom: 40px;*/
+}
+.Header h1{
+	background: #fff;
+	color:#333;
+	display: inline-block;
+	font-size: 1.6em;
+	letter-spacing: -2px;
+	padding: 6px 8px;
+	border-radius: 8px;
 }
 .SearchBar{
 	margin: 40px 0;
@@ -18,9 +34,26 @@ body {
 	border: 1px solid #333;
 }
 .VideoDetail .col-md-8{
-	padding:0 !important;
+	padding:0px !important;
+	padding-right:10px !important;
+
 }
-.video-title h3 a{color:#333;}
+
+.video-title h3 a:hover{
+	color:#46b8da;
+	font-size: 1.3em;
+}
+.video-title h3 a{
+	color:#333;
+	font-size: 1em;
+	-webkit-transition: font-size 1.5s; /* Safari */
+    -webkit-transition-timing-function: cubic-bezier(0.99, 0.03, 0, 0.99); /* Safari */
+    transition: font-size 1.5s;
+    transition-timing-function: cubic-bezier(0.99, 0.03, 0, 0.99);
+}
 .list-group-item{cursor: pointer}
 .list-group-item:hover{background-color: #333; color: #fff;}
 .fa-youtube-play{color: #46b8da}
+
+
+.media-body h6{font-size: 1em;}

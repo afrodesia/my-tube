@@ -6,7 +6,10 @@ class SearchBar extends Component {
 
         super(props)
 
-        this.state = { term: ' ' }
+        this.state = { 
+            term: ' ',
+            placeholder: 'Search for something...'
+        }
 
     }
 
@@ -24,7 +27,8 @@ class SearchBar extends Component {
                       <input
                           value={this.state.term}
                           onChange={event => this.onInputChange(event.target.value)}
-                          type="text" className="form-control" placeholder="Search for..." />
+                          type="text" className="form-control" 
+                          placeholder={this.state.placeholder} />
                       <span className="input-group-btn">
                         <button className="btn btn-info" type="button">Go!</button>
                       </span>
