@@ -30,7 +30,7 @@ class SearchBar extends Component {
                           type="text" className="form-control" 
                           placeholder={this.state.placeholder} />
                       <span className="input-group-btn">
-                        <button className="btn btn-info" type="button">Go!</button>
+                        <button className="btn btn-info" type="button">Search for videos!</button>
                       </span>
                     </div>
                 </div>
